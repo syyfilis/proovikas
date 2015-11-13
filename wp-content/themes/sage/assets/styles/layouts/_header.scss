@@ -1,0 +1,84 @@
+.mainMenu{
+	clear:both;
+	height:70px;
+	width:100%;
+	background-color: $primaryBD;
+	display:block;
+}
+#secondary{
+	background-color:#eee;
+	position:absolute;
+	top:100px;
+	right:0;
+	left:0;
+}
+.mainMenuContent{
+	display:block;
+	width:1000px;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.mainMenuLan{
+	display:inline-block;
+	float:right;
+	width:100px;
+	height:100%;
+	text-align:right;
+	margin-top:20px;
+}
+.menuBox{
+	display:inline-block;
+	float:right;
+	text-align:center;
+	height:100%;
+}
+.mainMenuNav{
+	height:100%;
+	display:inline-block;
+	float:right;
+	margin-right:40px;
+	margin-top:20px;
+}
+#ln{
+	width:33%;
+}
+#nav{
+	font-weight: bold;
+	margin-left:20px;
+}
+.extraMenu{
+	height:100%;
+	float:right;
+	margin-top:20px;
+	color:$primaryBD;
+}
+.extraMenu a{
+	color:$primaryBD;
+}
+
+.pageHeader{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.mainBox{
+	display:block;
+	height:400px;
+    margin-bottom: 290px;
+}
+.mainBox img{
+    margin-bottom: 290px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.pageHeader h1{
+	text-align:center;
+}
+
+
+
+
+

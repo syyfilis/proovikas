@@ -1,0 +1,187 @@
+
+.mainBox{
+	display:block;
+	width:1000px;
+	margin-right:auto;
+	margin-left:auto;	
+	clear:both;
+}	
+.contentSection{
+	display:inline-block;
+	width:33%;
+	background-color:grey;
+	border-bottom: solid $secoundaryBD;
+	float:left;
+}
+#personSection{
+	height:260px;
+	width:50%;
+	background-color:white;
+	padding-top:30px;
+	background-image: url(http://mullarikoch.ee/app/uploads/2015/05/tamber-mullari-v.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.boxHeader{
+	display:block;
+	height:70px;
+	width:100%;
+	background-color:$primaryBD;
+	text-align:center;
+	float:left;
+	color:white;
+}
+.boxTextSection{
+	height:330px;
+	float:left;
+	display:block;
+	margin-top:25px;
+	margin-bottom:25px;
+	margin-right:20px;
+	margin-left:20px;
+	
+}
+
+#boxText{
+	margin-right:10px;
+	margin-left:10px;
+}
+#white{
+	background-color:white;
+}
+#grey{
+	background-color:#f1f1f1;
+}
+#lightBlue{
+background-color:$secoundaryBD;
+}
+
+.boxButton{
+	float:left;
+	display:inline-block;
+	width:33%;
+	margin-top:15px;
+	margin-bottom:50px;
+	border-color: $secoundaryBD;
+}
+.boxButtonContact{
+	clear:both;
+	width:33%;
+	border-color: $secoundaryBD;
+	margin-right:auto;
+	margin-left:auto;	
+}
+.boxButtonInput{
+	background-color:white;
+	text-align:center;
+	border-style: solid;
+    border-color: $secoundaryBD;
+}
+.boxButtonInput h3{
+	veritcal-align:middle;
+}
+
+
+.personTextSection{
+	margin-left:20px;
+}
+.personTextSection h2{
+	font-weight: 700;
+}
+.personImageBig{
+	display:inline-block;
+	width:50%;
+}
+
+.personImageBig img{
+	z-index:-1;
+    position: absolute;
+    top: 140px;
+    left: -120px;
+}
+
+.personTextSectionBig{
+	float:right;
+	display:inline-block;
+	width:50%;
+	padding-top:100px;
+	padding-bottom:70px;
+}
+
+.careerInfo{
+	display:block;
+	margin-left:80px;
+}
+td {
+    padding-top: 15px;
+	padding-right: 15px;
+    text-align: left;
+}
+.careerHeadings {
+	font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+	color:$secoundaryBD;
+}
+
+.personName{
+	font-weight: 700;
+	color:$secoundaryBD;
+}
+
+
+
+
+
+
+
+.blogPost{
+	display:block;
+	padding-top:25px;
+	background-color:white;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.blogPostTime{
+	color:white;
+	font-weight:700;
+	float:left;
+	display:inline-block;
+	width:140px;
+	height:80px;
+	background-color:grey;
+}
+
+.blogPostContent{
+	margin-left:160px;
+	margin-right:160px;
+	display:inline-block;
+}
+
+.blogPostTitle{
+	margin-left:20px;
+	height:90px;
+	float:left;
+	display:inline-block;
+}
+.blogTitle{
+	font-weight:700;
+}
+
+.date{
+	text-align:center;
+	margin-top:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
