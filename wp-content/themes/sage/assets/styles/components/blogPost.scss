@@ -1,0 +1,35 @@
+.blogPost{
+	display:block;
+	padding-top:25px;
+	background-color:white;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.blogPostTime{
+	color:white;
+	float:left;
+	display:inline-block;
+	width:140px;
+	height:80px;
+	background-color:grey;
+}
+
+.blogPostContent{
+	margin-left:160px;
+	margin-right:160px;
+	display:inline-block;
+}
+
+.blogPostTitle{
+	margin-left:20px;
+	height:90px;
+	float:left;
+	display:inline-block;
+}
+
+.date{
+	text-align:center;
+	margin-top:25px;
+}

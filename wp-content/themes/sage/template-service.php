@@ -56,7 +56,7 @@ We do not believe in consulting or memoranda that do not offer solutions. We bel
 	
 	<div class = "boxButton">
 		<div class = "boxButtonInput">
-			<h3>Contact Us</h3>
+			<h3 class ="boxInputHeader">Contact Us</h3>
 		</div>
 	</div>
 	<div class = "boxButton" >
@@ -131,7 +131,7 @@ We do not believe in consulting or memoranda that do not offer solutions. We bel
 		</div>
 	</div>
 	<div class = "boxButtonContact">
-		<div class = "boxButtonInput">
+		<div class = "boxButtonInput" id = "bottomBox">
 			<h3>Contact Us</h3>
 		</div>
 	</div>

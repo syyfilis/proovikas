@@ -13,6 +13,7 @@
 	border-bottom: solid $secoundaryBD;
 	float:left;
 }
+
 #personSection{
 	height:260px;
 	width:50%;
@@ -39,7 +40,6 @@
 	margin-bottom:25px;
 	margin-right:20px;
 	margin-left:20px;
-	
 }
 
 #boxText{
@@ -56,42 +56,18 @@
 background-color:$secoundaryBD;
 }
 
-.boxButton{
-	float:left;
-	display:inline-block;
-	width:33%;
-	margin-top:15px;
-	margin-bottom:50px;
-	border-color: $secoundaryBD;
-}
-.boxButtonContact{
-	clear:both;
-	width:33%;
-	border-color: $secoundaryBD;
-	margin-right:auto;
-	margin-left:auto;	
-}
-.boxButtonInput{
-	background-color:white;
-	text-align:center;
-	border-style: solid;
-    border-color: $secoundaryBD;
-}
-.boxButtonInput h3{
-	veritcal-align:middle;
-}
-
-
 .personTextSection{
 	margin-left:20px;
 }
-.personTextSection h2{
-	font-weight: 700;
+.boxInputHeader{
+	display: inline-block;
+	vertical-align:middle;
 }
 .personImageBig{
 	display:inline-block;
 	width:50%;
 }
+
 
 .personImageBig img{
 	z-index:-1;
@@ -117,6 +93,7 @@ td {
 	padding-right: 15px;
     text-align: left;
 }
+
 .careerHeadings {
 	font-weight: 700;
     margin-top: 30px;
@@ -125,62 +102,23 @@ td {
 }
 
 .personName{
-	font-weight: 700;
 	color:$secoundaryBD;
 }
 
 
 
-
-
-
-
-.blogPost{
-	display:block;
-	padding-top:25px;
-	background-color:white;
-	width:1000px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.blogPostTime{
-	color:white;
-	font-weight:700;
+.corporateText{
+	background-color: white;
 	float:left;
 	display:inline-block;
-	width:140px;
-	height:80px;
-	background-color:grey;
+	width:75%;
 }
 
-.blogPostContent{
-	margin-left:160px;
-	margin-right:160px;
-	display:inline-block;
+.cpText{
+	margin-top:20px;
+	margin-left:30px;
+	margin-right:30px;
 }
-
-.blogPostTitle{
-	margin-left:20px;
-	height:90px;
-	float:left;
-	display:inline-block;
-}
-.blogTitle{
-	font-weight:700;
-}
-
-.date{
-	text-align:center;
-	margin-top:25px;
-}
-
-
-
-
-
-
-
 
 
 

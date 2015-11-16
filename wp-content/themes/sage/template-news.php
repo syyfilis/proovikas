@@ -11,7 +11,6 @@
 
 <div id = "mainBox">
 	<div class="pageHeader">
-		<h1>News</h1>
+		<h1>Latest News</h1>
 	</div>
-	
 </div>
