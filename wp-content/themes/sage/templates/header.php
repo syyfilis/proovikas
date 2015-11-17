@@ -6,6 +6,7 @@
 				<div class = "menuBox" id = "ln"><a href ="#">RU</a></div>
 			</div>
 			<div class = "mainMenuNav">
+				<?php wp_nav_menu(); ?> 
 				<div class = "menuBox" id = "nav"><a href ="#">Contact Us</a></div>
 				<div class = "menuBox" id = "nav"><a href ="#">News</a></div>
 				<div class = "menuBox" id = "nav"><a href ="#">People</a></div>

@@ -15,43 +15,29 @@
 <div class = "mainBox">
 	<img src = "http://mullarikoch.ee/app/themes/mk/dist/images/logo.png" width = "200" height = "200">
 	<div class = "contentSection" id = "white">
-		<div class ="boxHeader" >
-			<h2>Counselling</h2>
+		<div class ="boxHeader" >	
+			<h2><?php the_field('header_1'); ?></h2>
 		</div>
 		<div class = "boxTextSection" id = "boxText">
-			<ul>
-				<li>Commerical Law, Mergers and Acquisitons</li>
-				<li>Contract Law</li>
-				<li>Data PRotection</li>
-				<li>Intellectual Property</li>
-				<li>IT and Other Technical Solutions</li>
-				<li>Insolvency and Rehabilitation</li>
-				<li>Labour Law</li>
-				<li>Property, Planning and Construction Law</li>
-				<li>Tax law</li>
-				<li>Public Procurement</li>
-				<li>Family Law</li>
-			</ul>
+				<p><?php the_field('content_text_1'); ?></p>
 		</div>
 	</div>
 	<div class ="contentSection" id = "grey">
 		<div class ="boxHeader" id = "lightBlue">
-			<h2>Dispute Resolution</h2>
+			<h2><?php the_field('header_2'); ?></h2>
 		</div>
 		<div class = "boxTextSection">
-			<p>Law firm Mullari & Koch provides legal services in all business related matters. Our clients are companies, state and local authorities as well as private investors and startups.
-
-We do not believe in consulting or memoranda that do not offer solutions. We believe that the fundamentals of a successful consultation are expertise, professionalism and dedication. We believe in clear-cut solutions.
-</p>
+			<p><?php the_field('content_text_2'); ?></p>
 		</div>
 	</div>
 	<div class ="contentSection" id ="white">
 		<div class ="boxHeader">
-			<h2>Packages</h2>
+			<h2><?php the_field('header_3'); ?></h2>
 		</div>
 		<div class = "boxTextSection">
-			<img src = "http://mullarikoch.ee/app/uploads/2015/05/Logod_2-veergu-e1436376063936.jpg">
+			<p><?php the_field('content_text_3'); ?></p>
 		</div>
+
 	</div>
 	
 	<div class = "boxButton">
@@ -91,19 +77,15 @@ We do not believe in consulting or memoranda that do not offer solutions. We bel
 			<h2>Counselling</h2>
 		</div>
 		<div class = "boxTextSection">
-			<ul>
-				<li>Commerical Law, Mergers and Acquisitons</li>
-				<li>Contract Law</li>
-				<li>Data PRotection</li>
-				<li>Intellectual Property</li>
-				<li>IT and Other Technical Solutions</li>
-				<li>Insolvency and Rehabilitation</li>
-				<li>Labour Law</li>
-				<li>Property, Planning and Construction Law</li>
-				<li>Tax law</li>
-				<li>Public Procurement</li>
-				<li>Family Law</li>
-			</ul>
+    <ul>
+ 
+    <?php while( have_rows('content_text_4') ): the_row(); ?>
+ 
+        <li><?php echo the_row(); ?></li>
+        
+    <?php endwhile; ?>
+ 
+    </ul>
 		</div>
 	</div>
 	<div class ="contentSection" id = "grey">
