@@ -2,9 +2,25 @@
 /**
  * Template Name: Corporate and Commercial
  */
-?>
-
-<?php while (have_posts()) : the_post(); ?>
+$defaults = array(
+	'theme_location'  => '',
+	'menu'            => '',
+	'container'       => '',
+	'container_class' => 'sideMenuList',
+	'container_id'    => '',
+	'menu_class'      => 'sideMenuList',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
+while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/page', 'header'); ?>
   <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
@@ -17,12 +33,6 @@
 			<p class = "cpText"><?php the_field('page_text'); ?></p>
 		</div>
 		<div class = "corporateMenu">
-			<ul class = "sideMenuList">
-				<li class = "sideMenuListUnit">Banking and Finance</li>
-				<li class = "sideMenuListUnit" >Capital Markets</li>
-				<li class = "sideMenuListUnit">Private Equity</li>
-				<li class = "sideMenuListUnit">Corporate and Commercial</li>
-				<li class = "sideMenuListUnit" id = "lastUnit">Intelectual Property</li>
-			</ul>
+		<?php wp_nav_menu( $defaults); ?> 
 		</div>
 </div>

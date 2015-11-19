@@ -9,7 +9,7 @@
 	list-style: none;
 }
 
-.sideMenuListUnit{
+.sideMenuList li{
 	margin-right:20px;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -21,4 +21,11 @@
 
 #lastUnit{
 		border-bottom: none;
+}
+.sideMenuList a{
+	color:$primaryBD;
+}
+
+.sideMenuList a:hover{
+	color:black;
 }
