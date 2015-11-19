@@ -26,63 +26,48 @@
 	<div class = "personTextSectionBig">
 		<div class = "careerInfo">
 			<div class = "personName">
-				<h2>Tambet Mullari</h2>
-				<h3>Attorney at Law</h3>
+				<h2><?php the_field('person_name'); ?></h2>
+				<h3><?php the_field('person_status'); ?></h3>
 			</div>
-				<h4 class = "careerHeadings">Career</h4>
+				<h4 class = "careerHeadings"><?php the_field('heading_1'); ?></h4>
 			<table>
-				<tr>
-					<td>since 2012</td>
-					<td>Law firm Mullari & Koch</td>
-				</tr>
-				<tr>
-					<td>2006-2012</td>
-					<td>Law firm Mullari & Partnerid</td>
-				</tr>
-				 <tr>
-					<td>2003-2006</td>
-					<td>Law firm Valdma & Partnerid</td>
-				 </tr>
-				 <tr>
-					<td>1998-2002</td>
-					<td>Law firm Heta</td>
-				 </tr>
-				 <tr>
-					<td>1998</td>
-					<td>Tallinn Stock Exchange</td>
-				 </tr>
-				 <tr>
-					<td>1995-1998</td>
-					<td>State Court of Estonia</td>
-				 </tr>
+				<?php
+					if( have_rows('table_1') )
+					{
+						while ( have_rows('table_1') ) : the_row();
+						?>
+						<tr>
+							<td><?php the_sub_field('year_1'); ?></td>
+							<td><?php the_sub_field('information_1'); ?></td>
+						</tr>
+						<?php
+						endwhile;
+					}
+				?>
 			</table>
-				<h4 class = "careerHeadings">Education</h4>
+				<h4 class = "careerHeadings"><?php the_field('heading_2'); ?></h4>
 			<table>
-				<tr>
-					<td>2000</td>
-					<td>Law firm Mullari & Koch</td>
-				</tr>
-				<tr>
-					<td>1997</td>
-					<td>Law firm Mullari & Partnerid</td>
-				</tr>
+				<?php
+					if( have_rows('table_1') )
+					{
+						while ( have_rows('table_2') ) : the_row();
+						?>
+						<tr>
+							<td><?php the_sub_field('year_2'); ?></td>
+							<td><?php the_sub_field('information_2'); ?></td>
+						</tr>
+						<?php
+						endwhile;
+					}
+				?>
 			</table>
-				<h4 class = "careerHeadings">Languages</h4>
+				<h4 class = "careerHeadings"><?php the_field('heading_3'); ?></h4>
 			<div class = "careerText">
-				<p>Estonian, Russian, English, German</p>
+				<p><?php the_field('languages'); ?></p>
 			</div>
+			<h4 class = "careerHeadings"><?php the_field('heading_4'); ?></h4>
 			<div class = "careerText">
-				<p>Estonian Bar Association since 1999
-
-					Estonian Academic Law Society
-	
-					EstBAN – Estonian Business Angels Network</p>
-			</div>
-			<h4 class = "careerHeadings">ADDITIONAL INFORMATION</h4>
-			<div class = "careerText">
-			<p>Tambet Mullari advises clients mainly in companies’ everyday business activity legal matters and liability of the managing bodies. He has wide experience in representing both the creditors and the debtors and he has successfully participated in numerous relevant court cases.
-			</br></br>
-Tambet has participated in lawmaking, particularly in drafting the Human Genes Research Act which was the first step towards creation of the Biofond.</p>
+				<p><<?php the_field('addition_information'); ?>/p>
 			</div>
 			
 		</div>

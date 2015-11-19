@@ -9,52 +9,33 @@
   <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 <div class = "mainBox">
+	<?php
+		if( have_rows('person') )
+		{
+		while ( have_rows('person') ) : the_row();
+		?>
 	<div class = "contentSection" id = "personSection">
 		<div class = "personTextSection">
-			<h3>Tambet Mullary</h3>
-			<h4>Attorney at law</h4>
-			<ul>
-				<li>Commerical law</li>
-				<li>M&A</li>
-				<li>Litigation</li>
-				<li>Property Law</li>
-			</ul>
+						<h3><?php the_sub_field('personname'); ?></h3>
+						<h4><?php the_sub_field('personstatus'); ?></h4>
+						<ul>
+						<?php
+							if( have_rows('personareas') )
+							{
+								while ( have_rows('personareas') ) : the_row();
+										// display a sub field value
+								?>
+										<li><?php the_sub_field('personarea'); ?></li>
+								<?php
+								endwhile;
+							}
+						?>
+						</ul>
 		</div>
 	</div>
-		<div class = "contentSection" id = "personSection">
-		<div class = "personTextSection">
-			<h3>Tambet Mullary</h3>
-			<h4>Attorney at law</h4>
-			<ul>
-				<li>Commerical law</li>
-				<li>M&A</li>
-				<li>Litigation</li>
-				<li>Property Law</li>
-			</ul>
-		</div>
-	</div>
-		<div class = "contentSection" id = "personSection">
-		<div class = "personTextSection">
-			<h3>Tambet Mullary</h3>
-			<h4>Attorney at law</h4>
-			<ul>
-				<li>Commerical law</li>
-				<li>M&A</li>
-				<li>Litigation</li>
-				<li>Property Law</li>
-			</ul>
-		</div>
-	</div>
-		<div class = "contentSection" id = "personSection">
-		<div class = "personTextSection">
-			<h3>Tambet Mullary</h3>
-			<h4>Attorney at law</h4>
-			<ul>
-				<li>Commerical law</li>
-				<li>M&A</li>
-				<li>Litigation</li>
-				<li>Property Law</li>
-			</ul>
-		</div>
-	</div>
+	<?php
+		endwhile;
+		}
+	?>
+
 </div>

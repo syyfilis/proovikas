@@ -19,6 +19,9 @@
 	margin-left:auto;
 	margin-right:auto;
 }
+.menuBox li{
+	margin-right: 20px;
+}
 .mainMenuLan{
 	display:inline-block;
 	float:right;
@@ -46,6 +49,8 @@
 #nav{
 	font-weight: bold;
 	margin-left:20px;
+	display: inline-flex;
+    list-style: none;
 }
 .extraMenu{
 	height:100%;

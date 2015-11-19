@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: How can we help you:
+ * Template Name: Main Page
  */
 ?>
 
@@ -18,8 +18,10 @@
 		<div class ="boxHeader" >	
 			<h2><?php the_field('header_1'); ?></h2>
 		</div>
-		<div class = "boxTextSection" id = "boxText">
-				<p><?php the_field('content_text_1'); ?></p>
+		<div class = "boxTextSection">
+			<ul class = "boxBlogList">
+				<?php wp_get_archives( array( 'type' => 'postbypost', 'limit' => 4, 'format' => 'Custom','before' => '<li class = "blogListUnit">','after' => '</li>') ); ?>
+			</ul>
 		</div>
 	</div>
 	<div class ="contentSection" id = "grey">
@@ -78,13 +80,17 @@
 		</div>
 		<div class = "boxTextSection">
     <ul>
- 
-    <?php while( have_rows('content_text_4') ): the_row(); ?>
- 
-        <li><?php echo the_row(); ?></li>
-        
-    <?php endwhile; ?>
- 
+		<?php
+			if( have_rows('content_text_4') )
+			{
+				while ( have_rows('content_text_4') ) : the_row();
+						// display a sub field value
+				?>
+						<li><?php the_sub_field('list_item'); ?></li>
+				<?php
+				endwhile;
+			}
+		?>
     </ul>
 		</div>
 	</div>
@@ -94,9 +100,16 @@
 		</div>
 		<div class = "boxTextSection">
 			<ul>
-				<li>Commerical Law, Mergers and Acquisitons</li>
-				<li>Contract Law</li>
-				<li>Data PRotection</li>
+				<?php
+					if( have_rows('content_text_5') )
+					{
+						while ( have_rows('content_text_5') ) : the_row();
+						?>
+								<li><?php the_sub_field('list_item'); ?></li>
+						<?php
+						endwhile;
+					}
+				?>
 			</ul>
 		</div>
 	</div>
@@ -106,9 +119,16 @@
 		</div>
 		<div class = "boxTextSection">
 			<ul>
-				<li>Commerical Law, Mergers and Acquisitons</li>
-				<li>Contract Law</li>
-				<li>Data PRotection</li>
+				<?php
+					if( have_rows('content_text_6') )
+					{
+						while ( have_rows('content_text_6') ) : the_row();
+						?>
+								<li><?php the_sub_field('list_item'); ?></li>
+						<?php
+						endwhile;
+					}
+				?>
 			</ul>
 		</div>
 	</div>

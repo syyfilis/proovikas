@@ -29,6 +29,13 @@
 	display:inline-block;
 }
 
+.blogPostTitle a{
+	color:black;
+}
+
+.blogPostTitle a:hover{
+	color:$primaryBD;
+}
 .date{
 	text-align:center;
 	margin-top:25px;
