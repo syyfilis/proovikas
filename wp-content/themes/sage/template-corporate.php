@@ -4,7 +4,7 @@
  */
 $defaults = array(
 	'theme_location'  => '',
-	'menu'            => '',
+	'menu'            => 'secondaryMenu',
 	'container'       => '',
 	'container_class' => 'sideMenuList',
 	'container_id'    => '',
