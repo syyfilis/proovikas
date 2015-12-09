@@ -1,0 +1,35 @@
+.boxButton{
+	float:left;
+	display:inline-block;
+	width:33%;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.boxButtonContact{
+	clear:both;
+	width:33%;
+	border-color: $secoundaryBD;
+	margin-right:auto;
+	margin-left:auto;	
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.boxButtonInput{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	text-align:center;
+	border-style: solid;
+    border-color: $secoundaryBD;
+}
+.boxButtonInput a{
+	color:black;
+}
+.boxButtonText{
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bottomBox{
+	width:100%;
+}
