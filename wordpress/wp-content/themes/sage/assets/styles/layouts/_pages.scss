@@ -93,9 +93,10 @@ background-color:$secoundaryBD;
 
 .personImageBig img{
 	z-index:-1;
-    position: absolute;
-    top: 70px;
-    left: -120px;
+    position: relative;
+    left: -300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .personTextSectionBig{
